@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" 
+           Name="NCD to Parquet Converter" 
+           Language="1033" 
+           Version="1.0.0.0" 
+           Manufacturer="Trading Tools" 
+           UpgradeCode="12345678-1234-1234-1234-123456789012">
+    
+    <Package InstallerVersion="200" 
+             Compressed="yes" 
+             InstallScope="perMachine" 
+             Description="NinjaTrader NCD to Parquet Converter"
+             Comments="Convert NCD files to Parquet format"/>
+
+    <MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
+    <MediaTemplate EmbedCab="yes" />
+
+    <Feature Id="ProductFeature" Title="NCD Converter" Level="1">
+      <ComponentGroupRef Id="ProductComponents" />
+      <ComponentGroupRef Id="ProductShortcuts" />
+    </Feature>
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="NCDConverter" />
+      </Directory>
+      <Directory Id="ProgramMenuFolder">
+        <Directory Id="ApplicationProgramsFolder" Name="NCD Converter"/>
+      </Directory>
+      <Directory Id="DesktopFolder" Name="Desktop"/>
+    </Directory>
+
+    <ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+      <Component Id="NCDConverterExe" Guid="12345678-1234-1234-1234-123456789013">
+        <File Id="NCDConverterExe" 
+              Source="$(var.NCDConverter.TargetPath)" 
+              KeyPath="yes" />
+      </Component>
+      <Component Id="NCDConverterDll" Guid="12345678-1234-1234-1234-123456789014">
+        <File Id="NCDConverterDll" 
+              Source="$(var.NCDConverter.TargetDir)NCDConverter.dll" />
+      </Component>
+      <Component Id="ParquetNetDll" Guid="12345678-1234-1234-1234-123456789015">
+        <File Id="ParquetNetDll" 
+              Source="$(var.NCDConverter.TargetDir)Parquet.Net.dll" />
+      </Component>
+    </ComponentGroup>
+
+    <ComponentGroup Id="ProductShortcuts" Directory="ApplicationProgramsFolder">
+      <Component Id="ApplicationShortcut" Guid="12345678-1234-1234-1234-123456789016">
+        <Shortcut Id="ApplicationStartMenuShortcut"
+                  Name="NCD to Parquet Converter"
+                  Description="Convert NinjaTrader NCD files to Parquet"
+                  Target="[#NCDConverterExe]"
+                  WorkingDirectory="INSTALLFOLDER"/>
+        <RemoveFolder Id="ApplicationProgramsFolder" On="uninstall"/>
+        <RegistryValue Root="HKCU" 
+                       Key="Software\NCDConverter" 
+                       Name="installed" 
+                       Type="integer" 
+                       Value="1" 
+                       KeyPath="yes"/>
+      </Component>
+      <Component Id="DesktopShortcut" Guid="12345678-1234-1234-1234-123456789017">
+        <Shortcut Id="ApplicationDesktopShortcut"
+                  Directory="DesktopFolder"
+                  Name="NCD Converter"
+                  Description="Convert NinjaTrader NCD files to Parquet"
+                  Target="[#NCDConverterExe]"
+                  WorkingDirectory="INSTALLFOLDER"/>
+        <RegistryValue Root="HKCU" 
+                       Key="Software\NCDConverter" 
+                       Name="desktop" 
+                       Type="integer" 
+                       Value="1" 
+                       KeyPath="yes"/>
+      </Component>
+    </ComponentGroup>
+
+    <UI>
+      <UIRef Id="WixUI_InstallDir" />
+      <Publish Dialog="WelcomeDlg" Control="Next" Event="NewDialog" Value="InstallDirDlg" Order="2">1</Publish>
+      <Publish Dialog="InstallDirDlg" Control="Back" Event="NewDialog" Value="WelcomeDlg" Order="2">1</Publish>
+    </UI>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    
+  </Product>
+</Wix>

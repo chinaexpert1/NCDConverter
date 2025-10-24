@@ -1,0 +1,10 @@
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter.csproj.AssemblyReference.cache
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\MainWindow.baml
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\MainWindow.g.cs
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\App.g.cs
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter_MarkupCompile.cache
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter.g.resources
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter.AssemblyInfoInputs.cache
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter.AssemblyInfo.cs
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\NCDConverter\obj\Release\net8.0-windows\NCDConverter.csproj.CoreCompileInputs.cache

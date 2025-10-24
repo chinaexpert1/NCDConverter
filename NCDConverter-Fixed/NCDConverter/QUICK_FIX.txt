@@ -1,0 +1,26 @@
+QUICK FIX FOR BUILD ERROR
+=========================
+
+The build script was trying to restore the solution file instead of the project file.
+
+FIXED COMMAND:
+Instead of: dotnet restore NCDConverter.sln
+Use this:    dotnet restore NCDConverter\NCDConverter.csproj
+
+The build.bat file has been updated with this fix.
+
+MANUAL BUILD STEPS:
+1. Open Command Prompt in the NCDConverter folder
+2. Run these commands one by one:
+
+   dotnet restore NCDConverter\NCDConverter.csproj
+   dotnet build NCDConverter\NCDConverter.csproj -c Release
+   
+3. The executable will be at:
+   NCDConverter\bin\Release\net6.0-windows\NCDConverter.exe
+
+4. Run it:
+   cd NCDConverter\bin\Release\net6.0-windows
+   NCDConverter.exe
+
+OR just run the updated build.bat file!

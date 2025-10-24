@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>icon.ico</ApplicationIcon>
+    <AssemblyName>NCDConverter</AssemblyName>
+    <RootNamespace>NCDConverter</RootNamespace>
+    <Version>1.0.0</Version>
+    <Authors>NCD Converter Team</Authors>
+    <Company>Trading Tools</Company>
+    <Product>NCD to Parquet Converter</Product>
+    <Description>Convert NinjaTrader NCD files to Parquet format</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Parquet.Net" Version="4.18.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\SharedLibs\NCDFile.cs" Link="NinjaTrader\NCDFile.cs" />
+    <Compile Include="..\SharedLibs\Rdx_System_IO.cs" Link="NinjaTrader\Rdx_System_IO.cs" />
+    <Compile Include="..\SharedLibs\DateTimeExtensions.cs" Link="NinjaTrader\DateTimeExtensions.cs" />
+  </ItemGroup>
+
+</Project>
