@@ -276,7 +276,7 @@ namespace NCDConverter
         {
             // Create schema
             var schema = new ParquetSchema(
-                new DataField<DateTimeOffset>("timestamp"),
+                new DataField<DateTime>("timestamp"),
                 new DataField<double>("open"),
                 new DataField<double>("high"),
                 new DataField<double>("low"),
@@ -287,7 +287,7 @@ namespace NCDConverter
             // Create data columns
             var timestampColumn = new DataColumn(
                 (DataField)schema[0],
-                records.Select(r => new DateTimeOffset(r.DateTime)).ToArray());
+                records.Select(r => r.DateTime).ToArray());
             
             var openColumn = new DataColumn(
                 (DataField)schema[1],
@@ -326,7 +326,7 @@ namespace NCDConverter
         {
             // Create schema
             var schema = new ParquetSchema(
-                new DataField<DateTimeOffset>("timestamp"),
+                new DataField<DateTime>("timestamp"),
                 new DataField<double>("price"),
                 new DataField<double>("bid"),
                 new DataField<double>("ask"),
@@ -336,7 +336,7 @@ namespace NCDConverter
             // Create data columns
             var timestampColumn = new DataColumn(
                 (DataField)schema[0],
-                records.Select(r => new DateTimeOffset(r.DateTime)).ToArray());
+                records.Select(r => r.DateTime).ToArray());
             
             var priceColumn = new DataColumn(
                 (DataField)schema[1],
