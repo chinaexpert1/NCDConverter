@@ -1,0 +1,15 @@
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\NCDConverter.exe
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\NCDConverter.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\NCDConverter.deps.json
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\NCDConverter.runtimeconfig.json
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\NCDConverter.dll.config
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\NCDConverter.pdb
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\Apache.Arrow.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\IronCompress.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\Microsoft.Data.Analysis.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\Microsoft.ML.DataView.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\Parquet.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\Snappier.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\ZstdSharp.dll
+C:\Users\Putna\OneDrive - Johns Hopkins\Documents\NinjaTrader 8\historical_data\NCDConverter-Fixed\NCDConverter\publish\nironcompress.dll

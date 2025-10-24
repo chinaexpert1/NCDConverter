@@ -5,7 +5,6 @@
     <TargetFramework>net8.0-windows</TargetFramework>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>true</UseWindowsForms>
-    <ApplicationIcon>icon.ico</ApplicationIcon>
     <AssemblyName>NCDConverter</AssemblyName>
     <RootNamespace>NCDConverter</RootNamespace>
     <Version>1.0.0</Version>
